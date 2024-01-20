@@ -1,0 +1,172 @@
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html{
+  font-size: 18px;
+}
+body{
+  background-color: hsl(217, 53%, 12%);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card{
+  background-color: hsl(216, 50%, 16%);
+  padding: 2em;
+  max-width: 22em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1.5em;
+  filter: drop-shadow(hsla(0, 0%, 0%, 0.2) 0 0 1em);
+}
+
+.card img{
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  margin: auto;
+  border-radius: .5em;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr .25fr 1fr;
+}
+
+.line{
+  grid-column: span 2;
+}
+
+.creation{
+  grid-column: span 2;
+}
+
+h1 a{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: .8em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  letter-spacing: .05em;
+}
+
+.card>p{
+  font-family: 'Outfit', sans-serif;
+  margin-top: 0;
+  margin-bottom: .7em;
+  color: #8BACD9;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.info p{
+  font-family: 'Outfit', sans-serif;
+  color: #8BACD9;
+  font-weight: 300;
+  font-size: 1.3em;  
+}
+
+.eth>*{
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.eth p{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  color: cyan;
+}
+
+.time-left{
+  text-align: right;     
+}
+
+.info>*{
+  margin: auto 0;
+  padding: 0;     
+}
+
+.info img{
+  vertical-align: auto;
+  scale: 150%;
+}
+
+.creation>p{
+  display: inline-block;
+  font-weight: 400;
+}
+
+.creation>img{
+  width: 1.25em;
+  border: hsl(0, 0%, 100%) solid .05em;
+  border-radius: 50%;
+  vertical-align: text-bottom;
+}
+
+.creation a{
+  color: white;
+
+}
+
+hr{
+  background-color: #8BACD9;
+  height: .1px;
+  border: none;
+}
+
+a:hover{
+    color: cyan;
+}
+
+.eye{
+    position: relative;
+    display: inline-block;
+    background: none;
+    width: 100%;
+    border-radius: .5em;
+    aspect-ratio: 1/1;
+}
+
+.eye::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: no-repeat center url(./images/icon-view.svg), hsla(180, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: .5s ease;
+    width: 100%;
+    border-radius: .5em;
+    aspect-ratio: 1/1;
+    
+}
+
+.eye:hover::after {
+    opacity: 1;
+}
+
+@media screen and (max-width:720px) {
+  html{
+    font-size: 14px;
+  }
+  
+  body{
+    padding: 0 1em;
+  }
+  
+  
+}
